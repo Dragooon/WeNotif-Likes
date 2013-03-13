@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plugin id="Dragooon:WeNotif-Likes">
+  <name>Notifications (Likes)</name>
+  <author email="mail@dragooon.net" url="http://smf-media.com/">Shitiz "Dragooon" Garg</author>
+  <description>Notifications extension for notifying the user of likes</description>
+  <version>1.0</version>
+
+  <hooks>
+    <function point="notification_callback" function="wenotif_likes_callback" filename="$plugindir/plugin" />
+    <function point="liked_content" function="wenotif_likes_liked_content" filename="$plugindir/plugin" />
+    <function point="display_message_list" function="wenotif_likes_display" filename="$plugindir/plugin" />
+  </hooks>
+</plugin>
